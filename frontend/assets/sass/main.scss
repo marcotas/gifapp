@@ -1,0 +1,48 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Bootstrap
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
+
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s;
+}
+.page-enter {
+  opacity: 0;
+  transform: translateX(16px);
+}
+.page-enter-to {
+  opacity: 1;
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateX(-16px);
+}
