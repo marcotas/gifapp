@@ -11,4 +11,5 @@
 |
 */
 
+Route::view('/', 'welcome');
 Route::get('s/{code}', 'ShortUrlController@redirect')->name('short-url.redirect');

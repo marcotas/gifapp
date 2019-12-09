@@ -16,6 +16,8 @@ class SignUpController extends Controller
             'password' => 'required|min:6|max:255|confirmed',
         ]);
 
+        $values['password'] = bcrypt($values['password']);
+
         /** @var User $user */
         $user  = User::create($values);
         $token = $user->createToken("{$user->id} token");
