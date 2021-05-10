@@ -16,7 +16,7 @@
     "@nuxtjs/axios": "^5.8.0",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.1.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
     "nuxt": "^2.10.2",
